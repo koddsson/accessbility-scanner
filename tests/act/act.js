@@ -108,7 +108,6 @@ const rulesToIgnore = [
   "efbfc7",
   "f51b46",
   "fd3a94",
-  "ff89c9",
   "ffbc54",
   "ffd0e9",
   "m6b1q3",
@@ -117,6 +116,7 @@ const rulesToIgnore = [
   "ucwvc8",
   "ye5d6e",
   "bf051a",
+  "ff89c9",
 ];
 
 const ignoredExamples = [
@@ -126,6 +126,9 @@ const ignoredExamples = [
   "https://act-rules.github.io/testcases/qt1vmo/0ef4f516db9ed70cb25f39c99637272808b8e60f.html",
 ];
 
+// TODO: Instead of dynamic tests which behave weird in Web Test Runner, we
+// should generate the tests from the HTML testcases. It would be great if it's
+//  easy to regenerate so we don't accidentally change the tests.
 describe("ACT Rules", function () {
   for (const rule of applicableRules) {
     const {
